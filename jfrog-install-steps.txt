@@ -1,0 +1,18 @@
+installation of jfrog---
+ 1.create ec2 instance with instance type as t2.medium
+2.in security group allow all trofic
+3.now connect it with mobastream
+4.use sudo su - command to completely shift to root user.
+5.then use the command to install jfrog
+
+wget https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/oss/jfrog-artifactory-oss/[RELEASE]/jfrog-artifactory-oss-[RELEASE]-linux.tar.gz?_gl=1*1li7shh*_ga*NDE5NTQ4Mzk4LjE2NTc3OTg1NTM.*_ga_SQ1NR9VTFJ*MTY1Nzg3NzAzNi40LjEuMTY1Nzg3NzA4NS4xMQ..
+6.after installation you get one tar file
+now untar file using-----
+tar zvxf tarfilename
+7.now go to tar folder using  --- cd <tarfilename>--- to start service
+8.there you have app and var
+9.go to app directory
+10.ls---go to bin
+11.use command ./artifactctl
+12.after completion copy paste public ip of instance and run in browser with 8082 port
+change the password
